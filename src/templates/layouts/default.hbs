@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{pageTitle}}</title>
+	<meta description="{{pageDescription}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	
+	{{#if production}}<link rel="stylesheet" href="{{assets}}/css/styles.min.css">{{else}}<link rel="stylesheet" href="{{assets}}/css/styles.css">{{/if}} {{!-- Adding minfied css if it's production --}}
+
+	<script src="{{assets}}/js/lib/modernizr-2.8.3.min.js"></script> {{!-- Remove or change to production script in production --}}
+	<script defer src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	{{#if production}}<script defer src="{{assets}}/js/scripts.min.js"></script>{{else}}<script defer src="{{assets}}/js/scripts.js"></script>{{/if}} {{!-- Adding minfied script if it's production --}}
+
+</head>
+<body>
+	<div class="wrapper">
+		{{>header}} {{!-- Adds header module to page --}}
+		{{>body}} {{!-- Add content from each pages/**/*.hbs file --}}
+	</div>
+
+	{{#if production}}{{else}}<script src="//localhost:35729/livereload.js"></script>{{/if}} {{!-- Adding livereload.js if it's under development --}}
+</body>
+</html>

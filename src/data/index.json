@@ -1,0 +1,16 @@
+{
+	"module-list-links": {
+		"title": "Simple Grunt.js setup with template",
+		"class": "",
+		"listitem": [
+			{"link": "Connect",	"href": "https://github.com/gruntjs/grunt-contrib-connect"},
+			{"link": "Watch",	"href": "https://github.com/gruntjs/grunt-contrib-watch"},
+			{"link": "JSHint",	"href": "https://github.com/gruntjs/grunt-contrib-jshint"},
+			{"link": "Concat",	"href": "https://github.com/gruntjs/grunt-contrib-concat"},
+			{"link": "Uglify",	"href": "https://github.com/gruntjs/grunt-contrib-uglify"},
+			{"link": "SASS",	"href": "https://github.com/gruntjs/grunt-contrib-sass"},
+			{"link": "Copy",	"href": "https://github.com/gruntjs/grunt-contrib-copy"},
+			{"link": "Assemble","href": "https://github.com/assemble/assemble"}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "SimpleGruntSetupTemplates",
+  "version": "0.0.1",
+  "description": "Simple Grunt.js setup with templates.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CG",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.x",
+    "grunt-contrib-connect": "~0.7.x",
+    "grunt-contrib-watch": "~0.6.x",
+    "grunt-contrib-sass": "~0.7.x",
+    "grunt-contrib-jshint": "~0.10.x",
+    "grunt-contrib-concat": "~0.4.x",
+    "grunt-contrib-uglify": "~0.5.x",
+    "grunt-contrib-copy": "~0.5.x",
+    "assemble": "~0.4.x"
+  }
+}

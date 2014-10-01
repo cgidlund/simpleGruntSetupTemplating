@@ -1,0 +1,40 @@
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+     -moz-background-size: $size;
+       -o-background-size: $size;
+          background-size: $size;
+}
+
+@mixin background-gradient($color1, $color2) {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+	background-image: -webkit-linear-gradient(top, $color1, $color2); 
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -ms-linear-gradient(top, $color1, $color2);
+	background-image: -o-linear-gradient(top, $color1, $color2);
+}
+
+@mixin opacity($opacity) {
+	-webkit-opacity: $opacity / 100;
+	   -moz-opacity: $opacity / 100;
+	        opacity: $opacity / 100;
+       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$opacity+")";
+           filter: alpha(opacity=$opacity);
+}
+
+@mixin box-shadow($values) {
+	-webkit-box-shadow: $values;
+	   -moz-box-shadow: $values;
+	   		box-shadow: $values;
+}
+
+@mixin border-radius($values) {
+	-webkit-border-radius: $values; 
+	   -moz-border-radius: $values; 
+	   		border-radius: $values; 
+}
+
+@mixin box-sizing {
+	-webkit-box-sizing: border-box;		/* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box;		/* Firefox, other Gecko */
+	   		box-sizing: border-box;     /* Opera/IE 8+ */
+}
