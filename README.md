@@ -18,3 +18,7 @@ Simple setup of Grunt.js with templates
 1. Open terminal and cd to this folder.
 2. Type `npm install` to install devDependencies from package.json file.
 3. Run Grunt by typing `grunt` in terminal.
+
+### Changed Git repo for local use
+
+https://github.com/cgidlund/simpleGruntSetupTemplating.git
