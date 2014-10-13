@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, p, img, video, a, ul, ol, li, blockquote, div {
+html, body, h1, h2, h3, h4, h5, h6, p, img, video, a, ul, ol, li, blockquote, div {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,7 +18,11 @@ a {
 }
 
 html {
-    font-size: 100%;
-    -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 100%;
+}
+
+img {
+	vertical-align: middle;
 }

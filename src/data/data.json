@@ -1,0 +1,12 @@
+{
+	"module-list": {
+		"title": "Title - Lorem ipsum",
+		"class": "",
+		"listitem": [
+			{"link": "List item 1",	"href": "#"},
+			{"link": "List item 2",	"href": "#"},
+			{"link": "List item 3",	"href": "#"},
+			{"link": "List item 4",	"href": "#"}
+		]
+	}
+}

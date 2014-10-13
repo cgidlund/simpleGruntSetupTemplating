@@ -4,6 +4,7 @@
 node_modules
 
 .sass-cache
+dev/
 
 # Compiled source #
 ###################

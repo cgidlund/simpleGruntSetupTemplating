@@ -134,6 +134,11 @@ module.exports = function (grunt) {
 				cwd: '<%= project.src %>/templates/pages',
 				src: ['**/*.hbs'],
 				dest: '<%= project.dev %>'
+			},
+			styleguide: {
+				// override task-level layout 
+				options: {layout: '<%= project.src %>/templates/layouts/style-guide.hbs' },
+				files: {'<%= project.dev %>/styleguide': ['<%= project.src %>/templates/styleguide/*.hbs' ]},
 			}
 		},
 		

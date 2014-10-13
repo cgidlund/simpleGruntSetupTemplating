@@ -1,0 +1,118 @@
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+	margin: 5px;
+	background: $bg;
+	//border: 1px solid $border;
+	
+	color: $txtcolor;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+
+	@include transition(all, 0.2s, ease-in-out);
+	//@include background-gradient(#eee, #ddd);
+	&:hover {
+		text-decoration: none;
+		//color: #fff;
+		//background: #777;
+		background: darken($bg, 10%);
+		//border-color: #000;
+		//@include background-gradient(#333, #444);
+	};
+	&.btn-big {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	&.btn-arrow {
+		padding-left: 40px;
+		padding-right: 40px;
+		position: relative;
+		overflow: hidden;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+		&:before {
+			//content: '>';
+			position: absolute;
+			font-size: 14px;
+			//font-weight: 700;
+			color: #fff;
+			@include transition(all, 0.2s, ease-in-out);
+		}
+	}
+	&.btn-right {
+		&:before {
+			content: '►';
+			top: 10px;
+			right: -30px;
+		}
+		&:hover {
+			&:before {
+				right: 16px;
+			}
+		}
+
+	}
+	&.btn-down {
+		&:before {
+			bottom: -20px;
+			right: 16px;
+			content: '▼';
+		}
+		&:hover {
+			&:before {
+				bottom: 10px;
+			}
+		}
+	}
+	&.cta-btn {
+		background: #0E83CD;
+		color: #fff;
+		&:hover {
+			background: lighten(#0E83CD, 10%);
+		}
+	}
+}
+
+.disable {
+	color: #ccc;
+	cursor: default;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+.msg {
+	border: 1px solid $border;
+	padding: 10px;
+	margin: 10px;
+	&.msg-success {
+		color: #3C763D;
+		background-color: #DFF0D8;
+		border-color: #D6E9C6;
+	}
+	&.msg-info {
+		color: #31708F;
+		background-color: #D9EDF7;
+		border-color: #BCE8F1;
+	}
+	&.msg-warning {
+		color: #8A6D3B;
+		background-color: #FCF8E3;
+		border-color: #FAEBCC;
+	}
+	&.msg-error {
+		color: #A94442;
+		background-color: #F2DEDE;
+		border-color: #EBCCD1;
+	}
+}
+
+
+

@@ -18,7 +18,7 @@ MYSCRIPT.Mixed = (function() {
 	
 	// Bind listners to elements
 	function _bindEvents() {
-		$doc.on( 'click', 'a', _menuSomething );
+		//$doc.on( 'click', 'a', _menuSomething );
 	}
 
 	// Init function
