@@ -1,3 +1,7 @@
 $bg : #eee;
 $border : #ccc;
 $txtcolor: #333;
+$txtcolorLighter: lighten($txtcolor, 20%);
+$linkColor: royalblue;
+$linkColorNoHref: steelblue;
+$linkColorDisable: #ccc;

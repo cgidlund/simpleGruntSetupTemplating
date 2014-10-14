@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 			livereload: {
 				options: {
 					port: '<%= project.port %>',
-					hostname: 'localhost', //'0.0.0.0', // Setting it to '*' will make the server accessible from anywhere.
+					hostname: '*',//'localhost', //'0.0.0.0', // Setting it to '*' will make the server accessible from anywhere.
 					base: '<%= project.dev %>',
 					debug: false, // Debugging in terminal
 					open: true // Open page in default browser

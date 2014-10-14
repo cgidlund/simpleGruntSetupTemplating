@@ -1,7 +1,7 @@
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	-webkit-font-smoothing: antialiased;
-	color: #333;
+	color: $txtcolor;
 }
 
 .wrapper {
@@ -23,18 +23,42 @@ ul {
 }
 
 ol {
+  counter-reset: my-counter;
 	li {
 		padding: 2px 0;
+		&:before {
+  		content: counter(my-counter, decimal);
+  		counter-increment: my-counter;
+  		padding-right: 10px;
+  		color: $txtcolorLighter;
+  		font-weight: 700;
+		}
 	}
 }
 
 a {
-	color: royalblue;
+	color: $linkColor;
 	&:hover {
 		text-decoration: underline;
 	}
 }
 
 a[href^="/#"] {
-	color: steelblue;
+	color: $linkColorNoHref;
+}
+
+input {
+  &[type=text] {
+    padding: 6px 10px;
+    margin: 4px;
+  }
+  &[type=password] {
+    padding: 6px 10px;
+    margin: 4px;
+  }
+}
+textarea {
+  padding: 6px 10px;
+  margin: 4px;
+  height: 50px;
 }

@@ -5,7 +5,6 @@
 	padding: 10px;
 	margin: 5px;
 	background: $bg;
-	//border: 1px solid $border;
 	
 	color: $txtcolor;
 	font-size: 12px;
@@ -15,14 +14,9 @@
 	line-height: 20px;
 
 	@include transition(all, 0.2s, ease-in-out);
-	//@include background-gradient(#eee, #ddd);
 	&:hover {
 		text-decoration: none;
-		//color: #fff;
-		//background: #777;
 		background: darken($bg, 10%);
-		//border-color: #000;
-		//@include background-gradient(#333, #444);
 	};
 	&.btn-big {
 		padding-left: 50px;
@@ -37,10 +31,8 @@
 		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
 		&:before {
-			//content: '>';
 			position: absolute;
 			font-size: 14px;
-			//font-weight: 700;
 			color: #fff;
 			@include transition(all, 0.2s, ease-in-out);
 		}
@@ -80,7 +72,7 @@
 }
 
 .disable {
-	color: #ccc;
+	color: $linkColorDisable;
 	cursor: default;
 	&:hover {
 		text-decoration: none;
