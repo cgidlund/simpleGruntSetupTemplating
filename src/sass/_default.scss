@@ -15,7 +15,10 @@ body {
 }
 
 ul {
-	li {}
+  margin: 10px 0;
+	li {
+  	padding: 2px 0;
+	}
 	a {
 		display: inline-block;
 		padding: 2px 0;
@@ -23,6 +26,7 @@ ul {
 }
 
 ol {
+  margin: 10px 0;
   counter-reset: my-counter;
 	li {
 		padding: 2px 0;

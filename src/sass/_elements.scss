@@ -1,4 +1,3 @@
-
 .btn {
 	display: inline-block;
 	vertical-align: middle;
@@ -106,5 +105,12 @@
 	}
 }
 
-
+.bg {
+	border: 1px solid $border;
+	background: $bg;
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
 
